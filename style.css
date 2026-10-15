@@ -1,0 +1,80 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Khối chứa hai cột */
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Cột trái */
+.left-column {
+    width: 50%;
+    float: left;
+    background-color: lightgray;
+    padding: 20px;
+    min-height: 180px;
+}
+
+/* Cột phải */
+.right-column {
+    width: 50%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    min-height: 180px;
+}
+
+/* Khung chứa nội dung dài */
+.overflow-box {
+    width: 300px;
+    max-width: 100%;
+    height: 150px;
+    background-color: lightcoral;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid #c45c5c;
+    line-height: 1.6;
+}
+
+/* Xóa ảnh hưởng của float */
+.clear-fix {
+    clear: both;
+}
+
+/* Chân trang */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Điều chỉnh cho màn hình nhỏ */
+@media (max-width: 600px) {
+    .left-column,
+    .right-column {
+        float: none;
+        width: 100%;
+    }
+
+    .overflow-box {
+        width: 100%;
+    }
+}
